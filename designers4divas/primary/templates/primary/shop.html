@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Shop | Designers4Divas | Headwraps | Ponchos | Coverups | HandMade</title>
+</head>
+{% extends "main/base.html" %}
+{% block body_block %}
+{% load static %}
+
+<!-- Main Page Specific CSS Links -->
+<link rel="stylesheet" href="{% static "css/my_css/primary/shop.css" %}"/>
+<link rel="stylesheet" href="{% static "css/my_css/primary/post_list.css" %}"/>
+
+{# Fonts#}
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
+<!-- *****MAIN CONTAINER***** -->
+<div class="container ttw-mainpage-maincontainer">
+  <div class="container-fluid ttw-mainpage-sectiontop">
+  </div>
+
+  <div class='loader'>
+  {# The actual blog posts#}
+        <div class="content ttw-blogcontainer">
+                  <div class="blog_posts">
+                    {% block content %}
+                    {% endblock %}
+                  </div>
+        </div>
+  </div>
+
+{# SCRIPTS#}
+<script type="text/javascript" src="{% static 'js/my_js/base.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/my_js/shop.js' %}"></script>
+<script src="{% static "js/downloaded_js/jquery.js" %}"></script>
+<script src="{% static "js/downloaded_js/popper.min.js" %}"></script>
+<script src="{% static "js/downloaded_js/bootstrap.js" %}"></script>
+<script src="{% static "js/downloaded_js/medium-editor.min.js" %}"></script>
+
+  {% endblock %}

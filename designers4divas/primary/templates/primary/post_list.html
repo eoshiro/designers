@@ -1,0 +1,30 @@
+
+{% extends 'primary/shop.html' %}
+{% block content %}
+{% load static %}
+
+
+<link rel="stylesheet" href="{% static "css/my_css/post_list.css" %}">
+
+
+<div class="centerstage post_list-pagecontainer">
+    <div class="col-sm post_list-container">
+    {% for post in post_list %}
+        <div class="post post_list-individual-container">
+          <a class="post_detail-individual-anchor" href="{% url 'primary:post_detail' pk=post.pk %}">
+              {% if post.image %}
+            <img class="post_list-img" src="{{post.image.url}}">
+            {% endif %}
+            <div class="container post_list-individual-inner">
+                  <a class="post_list-title-anchor" href="{% url 'primary:post_detail' pk=post.pk %}"><span class="post_list-title">{{ post.title }}</span></a>
+                  <br><span class="post_list-title">{{post.price}}</span>
+                    <div class="date post_list-published">
+                  </div>
+          </div>
+          </a>
+        </div>
+
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

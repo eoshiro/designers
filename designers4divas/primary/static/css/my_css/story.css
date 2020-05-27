@@ -1,0 +1,35 @@
+background{
+  color: #FFC0CB;
+}
+
+#events-img-one{
+  width: 35%;
+}
+
+/* First Section */
+
+.story-section-one {
+  color: white;
+  text-align: left;
+  background: #000;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16pt;
+  font-family: arial narrow;
+  padding: 2vw 1vw 2vw 1vw;
+}
+.story-title{
+  padding: 4vw 0 2vw 0;
+}
+
+.story-image{
+  display: flex;
+  justify-content: center;;
+}
+
+.story-body{
+  padding: 3vw 15vw 3vw 15vw;
+}

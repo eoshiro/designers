@@ -1,0 +1,51 @@
+
+html, body{
+  background-color: #fff;
+}
+
+
+
+#contact-img-one{
+  width: 35%;
+}
+
+/* First Section */
+
+.contact-section-one {
+  color: white;
+  text-align: center;
+  background: #000;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16pt;
+  font-family: arial narrow;
+  padding: 2vw 1vw 2vw 1vw;
+}
+.contact-title{
+  padding: 4vw 0 2vw 0;
+}
+
+.contact-image{
+  display: flex;
+  justify-content: center;;
+}
+
+.contact-body{
+  padding: 3vw 0 3vw 0;
+}
+
+.btn-real-primary{
+  background: #FFD1DC;
+  height: 80px;
+  width: 150px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .contact-section-one{
+    padding: 0 15vw 0 15vw;
+  }
+}

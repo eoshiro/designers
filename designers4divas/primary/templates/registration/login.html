@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<title>Main Page</title>
+{% extends "main/base.html" %}
+{% block body_block %}
+{% load static %}
+<!-- CSS Links -->
+<link rel="stylesheet" href="{% static "css/downloaded_css/fontawesome.css" %}"/>
+<link rel="stylesheet" href="{% static "css/downloaded_css/bootstrap.css" %}"/>
+<link rel="stylesheet" href="{% static "css/my_css/home.css" %}"/>
+<link rel="stylesheet" href="{% static "css/my_css/base.css" %}"/>
+<link rel="stylesheet" href="{% static "css/my_css/story.css" %}"/>
+
+
+  <div class="story-section-one">
+    <div class="story-title">
+        <h2>Please Login:</h2>
+    </div>
+    <div class="story-body">
+      {% if form.errors %}
+        <p>Your username and password didn't match.  Please try again.</p>
+      {% endif %}
+
+      <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="btn btn-primary" type="submit" value="Login">
+        <input class="btn btn-primary" type="hidden" name="next" value="{{next}}">
+      </form>
+    </div>
+
+
+{% endblock %}

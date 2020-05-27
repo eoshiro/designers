@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Base | Designers4Divas | Headwraps | Ponchos | Coverups | HandMade</title>
+  </head>
+  <link rel="shortcut icon" type="image/png" href="{% static "img/logo.ico" %}">
+  <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- For Quick Reference, style.css is the child dir, and using Bootstrap4.1.3 -->
+  <link rel="stylesheet" href="{% static "css/downloaded_css/font-awesome.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/downloaded_css/fontawesome.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/bootstrap.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/jquery.smartmenus.bootstrap.css" %}"/>
+
+  <link rel="stylesheet" href="{% static "css/downloaded_css/jquery.simpleLens.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/slick.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/nouislider.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/slick.css" %}"/>
+  <link media="all" rel="stylesheet" href="{% static "css/downloaded_css/sequence-theme.modern-slide-in.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/my_css/style.css" %}"/>
+
+  <link rel="stylesheet" href="{% static "css/my_css/home.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/my_css/base.css" %}"/>
+  <body>
+<!-- SPACE ABOVE HEADING -->
+    <div class="ttw-base-space1 container-fluid"></div>
+<!-- Heading -->
+  <div class="container-fluid ttw-base-containerheading">
+    <div class="container ttw-base-containerlogo">
+      <a class="ttw-hovertitle" href="{% url 'primary:home' %}"><img class="ttw-base-logo" src="{% static "img/mainlogo.png" %}"></a>
+      <div class="title-hidden">
+      <a class="ttw-hovertitle" href="{% url 'primary:home' %}"><p class="ttw-base-name">Designers4Divas</p></a>
+        </div>
+    </div>
+  </div>
+<!-- SPACE ABOVE NAV BAR -->
+      <div class="ttw-base-space2 container-fluid"></div>
+<!-- NAV BAR  -->
+<nav class="sticky-top ttw-mainpage-navbar">
+    <div class="container base-navbar-font">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link base-navbar-font" href="{% url 'primary:post_list' %}">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link base-navbar-font" href="{% url 'primary:events' %}">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link base-navbar-font" href="{% url 'primary:story' %}">Our Story</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link base-navbar-font" href="{% url 'primary:contact' %}">Contact</a>
+        </li>
+
+      {% if user.is_authenticated %}
+    </ul>
+      <div class="base-navbar-row-two navbar-nav align-items-center ml-auto">
+
+          <a class="base-navbar-row-two-nav-item nav-item nav-link" href="{% url 'admin:index' %}">Admin</a>
+          <a class="base-navbar-row-two-nav-item nav-item nav-link" href="{% url 'primary:post_new' %}">New Post</a>
+          <a class="base-navbar-row-two-nav-item nav-item nav-link" href="{% url 'primary:post_draft_list' %}">Drafts</a>
+          <a class="base-navbar-row-two-nav-item nav-item nav-link" href="{% url 'logout' %}">Log out</a>
+          <a class="base-navbar-row-two-nav-item">Welcome: {{ user.username }}</a>
+      </div>
+        {% else %}
+        <li class="nav-item">
+          <a class=" nav-link" href="{% url 'login' %}" aria-label="Login">
+            <span class=" fa fa-user" aria-hidden="true"></span></a>
+            </li>
+        </ul>
+        {% endif %}
+
+    </nav>
+    </div>
+    </div>
+
+
+
+
+
+<!-- TESTING SECTION -->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{% static "js/downloaded_js/bootstrap.js" %}"></script>
+<!-- SmartMenus jQuery plugin -->
+<script src="{% static "js/downloaded_js/jquery.smartmenus.js" %}"></script>
+<!-- SmartMenus jQuery Bootstrap Addon -->
+<script src="{% static "js/downloaded_js/jquery.smartmenus.bootstrap.js" %}"></script>
+<!-- To Slider JS -->
+<script src="{% static "js/downloaded_js/sequence.js" %}"></script>
+<script src="{% static "js/downloaded_js/sequence-theme.modern-slide-in.js" %}"></script>
+<!-- Product view slider -->
+<script src="{% static "js/downloaded_js/jquery.simpleGallery.js" %}"></script>
+<script src="{% static "js/downloaded_js/jquery.simpleLens.js" %}"></script>
+<!-- slick slider -->
+<script src="{% static "js/downloaded_js/slick.js" %}"></script>
+<!-- Price picker slider -->
+<script src="{% static "js/downloaded_js/nouislider.js" %}"></script>
+<!-- Custom js -->
+<script src="{% static "js/downloaded_js/custom.js" %}"></script>
+<script src="{% static "js/my_js/base.js" %}"></script>
+
+    {% block body_block %}
+    <!-- SPACE AFTER NAV BAR -->
+    <div id="spacethree" class="container-fluid">
+      <table class="spaceone">
+        <tr><h1>We are in base.html</h1>
+        </tr>
+      </table>
+    </div>
+</div>
+    {% endblock %}
+
+  </body>
+</html>

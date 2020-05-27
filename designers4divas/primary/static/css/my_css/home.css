@@ -1,0 +1,433 @@
+/* Main CSS Page  */
+/* colors */
+/* #F47983 */
+
+/****** PAGE ELEMENTS ******/
+a{
+  color: #000;
+}
+a:hover{
+  text-decoration: none;
+}
+
+html, body{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body{
+  font-family: arial;
+}
+
+.ttw-mainpage-maincontainer {
+  margin: 0 0 0 0 !important;
+  margin-right: 0px !important;
+  padding: 0 !important;
+  min-width: 100%;
+}
+
+/****** /PAGE ELEMENTS ******/
+/***** SECTION ONE *****/
+
+/* cover image */
+.pagemain-sectionone-container {
+  background: url("/static/img/cover-two.jpg") no-repeat;
+  background-size: cover;
+  padding: 0 !important;
+}
+/* /cover image */
+
+.pagemain-sectionone-container{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 !important;
+  padding: 4vw !important;
+  grid-gap: 0rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* left side */
+
+.pagemain-secone-containerone{
+  color: #fff;
+  margin: 0 !important;
+  padding: 5vw 0 5vw 0 !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.pagemain-secone-containerone-itemone{
+  color: #fff;
+  font-size: 24pt;
+  text-transform: uppercase;
+  font-family: comic sans-serif;
+  font-style: italic;
+}
+
+
+.pagemain-sectiontwo-container{
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.pagemain-secone-containerone-itemtwo{
+  color: #fff;
+  font-size: 14pt;
+  font-family: comic sans-serif;
+  font-style: italic;
+  padding: 2vw;
+}
+
+.pagemain-secone-containerone-itemthree{
+  color: #ffffff;
+  background-color: #700548;
+  max-width: 95px;
+  padding: .5vw 2vw .5vw 2vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.pagemain-secone-containerone-itemthree:hover{
+  color:  #700548 !important;
+  background-color: #ffffff;
+  border: 2px solid #700548;
+}
+
+/* /left side */
+
+/* right side */
+
+.pagemain-secone-containertwo{
+  color: #ffffff;
+  margin: 0 !important;
+  padding: 20px 2vw 20px 2vw  !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  max-width: 95vw;
+  overflow: auto;
+}
+
+.ttw-pagemain-imgcontainer{
+  align-content: flex-end;
+  position: relative;
+  overflow: auto;
+  padding: 100px;
+  margin-left: 70%;
+}
+
+.ttw-pagemain-section1img{
+  width: 400px;
+  border-radius: 50%;
+}
+/* /right side */
+
+/***** SECTION TWO *****/
+.pagemain-sectiontwo-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  height: 50%;
+  margin: 0 !important;
+  padding: 0 !important;
+  grid-gap: 0rem;
+  width: auto;
+  max-width: 100%;
+}
+
+/***** /SECTION TWO *****/
+
+/***** SECTION THREE *****/
+.mainpage-secthree-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  background-color: #fff;
+  margin: 0 !important;
+  padding: 0 0 0 0 !important;
+  grid-gap: 0rem;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  padding: 1rem;
+}
+
+/* COLUMN ONE */
+.mainpage-secthree-colone{
+  background-color: #transparent;
+  color: #ffffff;
+  margin: 0 !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 0 0 0 !important;
+}
+
+.mainpage-secthree-colone-cards {
+  font-family: trebuchet;
+  font-weight: bolder;
+  font-size: 18pt;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1vw 0 1vw !important;
+  height: 100%;
+  max-width: 100%;
+  color: #000000;
+  width: 100%;
+}
+
+.mainpage-post{
+  text-decoration: none !important;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 0 0 !important;
+}
+
+.mainpage-post:hover{
+  text-decoration: none;
+  color: #000;
+}
+
+.mainpage-card{
+  padding: 25px 25px 0 25px;
+  margin: 0 0 0 0 !important;
+  border: none;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .mainpage-card{
+  }
+}
+/* Row One */
+.mainpage-secthree-colone-rowone {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.mainpage-secthree-colone-rowone-paragraph{
+  color: #ffffff;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  max-width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 400px) {
+  .mainpage-secthree-colone-rowone-paragraph{
+  width: 75%;
+  font-size: 18pt;
+  }
+}
+
+.mainpage-secthree-logo{
+  margin-bottom: 35px;
+}
+/* /Row One */
+
+/* Row Two */
+.mainpage-secthree-colone-rowtwo{
+  color: #ffffff;
+  margin: 0 !important;
+  padding: 0 !important;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  .mainpage-secthree-colone-rowtwo{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+
+.mainpage-secthree-button{
+  color: #ffffff;
+  background-color: #4B77BE;
+  border-radius: 10px;
+  position: absolute;
+  text-decoration: none !important;
+  font-size: 16pt;
+  font-style: normal;
+  padding: 12px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-family: Times;
+  position: relative;
+  margin-bottom: 4vw;
+}
+
+.mainpage-secthree-button:hover{
+  color: #fff;
+  background-color: #192841;
+}
+/* /Column One*/
+
+/***** /SECTION THREE *****/
+
+/***** SECTION THREE *****/
+.pagemain-sectionthree-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  height: 50%;
+  margin: 0 !important;
+  padding: 0 !important;
+  grid-gap: 0rem;
+  width: auto;
+  max-width: 100%;
+}
+
+/***** /SECTION THREE *****/
+/* Section 4 */
+
+.home-section-four-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial black !important;
+  font-size: 24pt;
+  color: #700548;
+}
+
+@media only screen and (max-width: 700px) {
+  .home-section-four-container{
+    font-size: 20pt;
+  }
+}
+
+/***** SECTION FIVE (Instagram Feed) *****/
+
+
+.mainpage-secfive{
+  background-color: #000;
+  padding: 0 2vw 5vw 2vw;
+  width: 100%;
+  max-width: 100%;
+}
+
+.mainpage-secfive-title{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+  font-size: 16pt;
+  padding: 2vw 0 2vw 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .mainpage-secfive-title{
+    font-size: 14pt;
+  }
+}
+
+.mainpage-secfive-feed{
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  max-width: 100%;
+  align-items: center;
+  padding: 0;
+}
+
+@media only screen and (max-width: 840px) {
+  .mainpage-secfive-feed{
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .mainpage-secfive-feed{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+
+.mainpage-secfive-instagram-item{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  margin-top: 0 !important;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    color: #fff;
+
+}
+
+.home-price-title{
+  font-family: century gothic !important;
+  font-size: 16pt;
+  font-weight: normal !important;
+}
+
+.mainpage-secfive-img-container{
+  margin: 5vw 3vw 5vw 3vw;
+  font-size: 18pt;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  color: #000000;
+  padding: 2vw;
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.mainpage-secfive-img-container:hover{
+  box-shadow: 0 4px 8px 0 	#152238, 0 6px 20px 0 	#152238;
+}
+
+.mainpage-secfive-img{
+  max-width: 100%;
+  border: 10px solid #ffffff;
+}
+
+.mainpage-secfive-captions-container{
+  font-size: 16pt !important;
+  padding: 1vw;
+  color: #000 !important;
+  font-family: trebuchet;
+  font-weight: 600;
+  text-align: center;
+}
+
+.mainpage-secfive-captions{
+  font-family: trebuchet;
+  font-size: 12pt;
+  text-align: center;
+  color: #fff;
+}
+
+/***** SECTION /FIVE *****/

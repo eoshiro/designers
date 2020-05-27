@@ -1,0 +1,121 @@
+/****** PAGE ELEMENTS ******/
+
+/* background image */
+
+html, body{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body{
+  font-family: monospace;
+  background-color: #fff;
+  /* background: linear-gradient(to bottom right, #152238 0%, 	#00293A 15% ,	#B0C4DE 55% , #e7f6fd 100%); */
+}
+
+
+/****** /PAGE ELEMENTS ******/
+
+
+
+
+/***** PAGE CONTAINER  *****/
+.post_list-pagecontainer{
+  margin: 0 0 0 0 !important;
+  margin-right: 0px !important;
+  padding: 0 !important;
+  min-width: 100%;
+}
+
+/***** /PAGE CONTAINER  *****/
+
+/***** POSTS  *****/
+.post_list-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1445px) {
+  .post_list-container{
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .post_list-container{
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .post_list-container{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+
+.post_detail-individual-anchor{
+  padding: 0;
+}
+
+.post_list-individual-container{
+  margin: 5vw 3vw 5vw 3vw;
+  font-size: 18pt;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  color: #000000;
+  padding: 2vw;
+  max-width: 100%;
+}
+
+.post_list-individual-container:hover{
+}
+
+
+}
+
+.post_list-individual-inner{
+  max-width: 100%;
+  padding: 1vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 10pt !important;
+  font-family: trebuchet;
+  color: #000;
+}
+
+.post_list-title-anchor{
+  text-decoration: none !important;
+}
+
+.post_list-title{
+
+  font-size: 14pt !important;
+  padding: 1vw;
+  color: #000 !important;
+  font-family: century gothic;
+  text-align: center;
+
+}
+
+.post_list-img{
+  min-width: 150px;
+  max-width: 100%;
+  border: 10px solid #ffffff;
+}
+
+.post_list-published{
+  font-family: trebuchet;
+  font-size: 12pt;
+  text-align: center;
+
+}

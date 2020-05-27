@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  {% extends "primary/shop.html" %}
+  {% block body_block %}
+  {% load static %}
+
+  <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <!-- For Quick Reference, style.css is the child dir, and using Bootstrap4.1.3 -->
+  <link rel="stylesheet" href="{% static "css/downloaded_css/font-awesome.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/bootstrap.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/jquery.smartmenus.bootstrap.css" %}"/>
+
+  <link rel="stylesheet" href="{% static "css/downloaded_css/jquery.simpleLens.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/slick.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/nouislider.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/downloaded_css/slick.css" %}"/>
+  <link media="all" rel="stylesheet" href="{% static "css/downloaded_css/sequence-theme.modern-slide-in.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/my_css/story.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/my_css/post_form.css" %}"/>
+
+
+<div class="post_form-page-container">
+  <div class="post_form-title-container">
+      New Post
+    </div>
+    <div class="post_form-body">
+      <form method="POST" class="post-form" enctype='multipart/form-data' method="POST">
+      {% csrf_token %}
+      {{form.as_p}}
+      <button type="submit" class="save btn btn-default post_form-button">Save</button>
+      (Go to Drafts to Publish if this is a new post)
+      </form>
+      <script>var editor = new MediumEditor('.editable');</script>
+    </div>
+  </div>
+
+
+
+{% endblock %}

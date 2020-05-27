@@ -1,0 +1,75 @@
+
+
+/* Shop Page CSS */
+
+/***** PAGE ELEMENTS  ******/
+
+.shop-sectionone-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  height: 50%;
+  margin: 0 !important;
+  padding: 0;
+  grid-gap: 0rem;
+  width: auto;
+  max-width: 100%;
+}
+/***** /PAGE ELEMENTS  ******/
+
+/***** CARD ELEMENTS  ******/
+
+.ttw-shop-containercard{
+  color: #ffffff;
+  margin: 0 !important;
+  padding: 5vw  !important;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 95vw;
+}
+
+.ttw-shop-containercardimg{
+  margin: 0 !important;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 10px !important;
+  overflow: auto;
+}
+
+.ttw-shop-containercardimg:hover{
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .3);
+
+}
+
+.ttw-shop-cardimg{
+  width: 100%;
+  height: auto;
+}
+
+
+
+.ttw-shop-containercardbody{
+  color: #000000;
+  margin: 0 !important;
+  padding: 20px 2vw 20px 2vw  !important;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 95vw;
+  overflow: auto;
+}
+
+.ttw-shop-containercardbody:hover{
+  color: #F47983;
+}
+
+
+
+/***** /CARD ELEMENTS  ******/
